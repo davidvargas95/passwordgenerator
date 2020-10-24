@@ -1,11 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-
-
-// Function to generate password
-
-
 // Character options to be used in the random password
   var passwordLength= "";
 
@@ -14,6 +9,8 @@ var generateBtn = document.querySelector("#generate");
   var symbols = [ "!","@","#","$","%","^","&","*","(",")","+","-","?","<",">","/" ];
   var numeric = [ "0","1","2","3","4","5","6","7","8","9" ];
 
+
+  // Function that will generate our password with the desired criteria
   function generatePassword() {
   
     var passwordLength = (prompt("How many characters will your new password be?"));
@@ -57,8 +54,6 @@ var generateBtn = document.querySelector("#generate");
   }
   return arrayIndexSelector;
 }  
-
-// Add the generated password to the HTML
 
 // Write password to the #password input
 function writePassword() {
