@@ -47,6 +47,11 @@ var generateBtn = document.querySelector("#generate");
     passwordArray = passwordArray.concat(numeric)
   }
 
+  // Could not figure out how to alert them that they need at least one criteria
+  // else if ( !addLowercase && !uppercase && !addSymbols && !addNumeric ) {
+  //   alert ("You need to select at least one criteria for password. Start over.")
+  // }
+
   var arrayIndexSelector = ""
 
   for (var i = 0; i < passwordLength; i++) {
