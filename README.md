@@ -4,7 +4,7 @@
 
 If you are like me, then you often times have time coming up with an effective and safe password. In this application, you will declare what kinds of characters you want your password to contain and how long it will be, then it will generate a randomized one for you. 
 
-## Deployed Link: 
+## Deployed Link: https://davidvargas95.github.io/passwordgenerator/
 
 ### Listed below is a brief explanation on how I achieved this: 
 
