@@ -17,15 +17,16 @@ var generateBtn = document.querySelector("#generate");
   
     if (passwordLength <=7 || passwordLength >= 129) {
       alert( "Password length must be between 8 and 128 characters long!");
+      return;
     }
   
 
 // Which kind of characters would they like?
 
   var addLowercase = confirm( "Do you want your password to have lowercase characters?" );
-  var addUppercase = confirm( "How about uppercase letters?" );
-  var addSymbols = confirm( "Symbols?" );
-  var addNumeric = confirm( "Gotta have some numbers, right?");
+  var addUppercase = confirm( "Do you want uppercase letters?" );
+  var addSymbols = confirm( "Do you want symbols?" );
+  var addNumeric = confirm( "Do you want numbers?");
 
 // Telling the script which variable arrays to include in the password
 
@@ -48,8 +49,9 @@ var generateBtn = document.querySelector("#generate");
   }
 
   // Could not figure out how to alert them that they need at least one criteria
-  // else if ( !addLowercase && !uppercase && !addSymbols && !addNumeric ) {
-  //   alert ("You need to select at least one criteria for password. Start over.")
+  // if ( !addLowercase && !uppercase && !addSymbols && !addNumeric ) {
+  //   alert ("You need to select at least one criteria for password. Start over.");
+  //   return;
   // }
 
   var arrayIndexSelector = ""
